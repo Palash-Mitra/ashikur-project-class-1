@@ -1,0 +1,58 @@
+/* Common Css */
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "PT Sans", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 1441px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul, ol li{
+  list-style: none;
+}
+
+body{
+  font-family: var(--font-family);
+}
+/* Common Css End */
+
+  /* Navbar css */
+  #navbarSupportedContent .nav-item .nav-link{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535;
+    padding: 18px 22px 5px 22px;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+
+  #navbarSupportedContent .nav-item .nav-link::before{
+    content: "";
+    width: 0%;
+    height: 1.5px;
+    background-color: #353535;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+  }
+
+  #navbarSupportedContent .nav-item:hover .nav-link::before{
+    width: 100%;
+    transition: 0.4s;
+  }
+
+  /* Navbar css Ends */
